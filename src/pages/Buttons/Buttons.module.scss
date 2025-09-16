@@ -1,0 +1,23 @@
+.buttonsWrapper {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 120px;
+}
+
+.buttonTypes {
+    padding: 12px 0;
+}
+
+.buttonTypes h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.buttons>* {
+    margin: 0 10px 10px 0;
+}
+
+.blue {
+    background-color: rgb(100, 100, 255);
+}

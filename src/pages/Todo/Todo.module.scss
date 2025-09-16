@@ -1,0 +1,163 @@
+.todoWrapper {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px 24px;
+    width: 500px;
+    min-height: 300px;
+    box-shadow: 0 0 8px #ababab;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.headerContent {
+    font-weight: 500;
+}
+
+.headerIcon {
+    padding-left: 10px;
+    padding-top: 2px;
+    font-size: 22px;
+    color: #2b61a4;
+}
+
+.taskStatuses {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 16px 0 20px;
+    user-select: none;
+}
+
+.taskStatus {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 30px;
+    padding: 3px 8px;
+}
+
+.taskStatusContent,
+.taskNumber {
+    font-weight: 500;
+}
+
+.taskStatusIcon {
+    font-size: 11px;
+}
+
+.taskStatusContent {
+    margin-bottom: 1px;
+}
+
+.taskTotal {
+    background-color: rgb(237, 237, 237);
+}
+
+.taskComplete {
+    background-color: rgb(192, 237, 192);
+}
+
+.taskUncomplete {
+    background-color: rgb(255, 186, 186);
+}
+
+.addTask {
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.taskInput,
+.submitBtn {
+    border: none;
+    border-radius: 100px;
+    background-color: #ededed;
+    color: black;
+    outline: none;
+    padding: 12px 16px;
+}
+
+.taskInput {
+    width: 100%;
+    padding-right: 50px;
+}
+
+.submitBtn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: 0 -50%;
+    font-weight: 550;
+    color: #525252;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    opacity: 0.8;
+}
+
+.taskList {
+    min-height: 100px;
+}
+
+.taskEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    color: #909090;
+}
+
+.taskEmpty p {
+    font-size: 15px;
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0 10px;
+}
+
+.taskItem:hover .taskCheckbox {
+    opacity: 0.6;
+}
+
+.taskCheckbox {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.taskCheckbox:checked {
+    border-color: blue;
+    color: red;
+}
+
+.taskContent {
+    flex-grow: 1;
+    margin-top: -3px;
+}
+
+.taskDelete {
+    cursor: pointer;
+    font-size: 17px;
+    opacity: 0.5;
+}
+
+.taskDelete:hover {
+    opacity: 0.8;
+}
+
+.completed .taskContent {
+    text-decoration: line-through;
+    color: #8a8a8a;
+}

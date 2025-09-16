@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.number {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #ccc;
+    opacity: 0.6;
+    transition: all 0.4s ease;
+}
+
+.action:hover {
+    opacity: 1;
+}
+
+.actionIcon {
+    margin-right: 6px;
+    font-size: 14px;
+}
