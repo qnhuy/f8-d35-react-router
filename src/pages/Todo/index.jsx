@@ -66,7 +66,7 @@ function Todo() {
                 />
                 <button className={styles.submitBtn}
                     onClick={handleAddTask}
-                    onKeyDown={e => e.key === 'Enter' ? handleAddTask : null}
+                    onKeyDown={e => e.key === 'Enter' ? handleAddTask : false}
                 >
                     Add
                 </button>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router"
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router"
 
 import DefaultLayout from "../../layouts/DefaultLayout"
 import Home from '../../pages/Home'
@@ -12,7 +12,7 @@ import Buttons from '../../pages/Buttons'
 
 function AppRoutes() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<DefaultLayout />}>
                     <Route index element={<Home />} />
@@ -25,7 +25,7 @@ function AppRoutes() {
                     <Route path="buttons" element={<Buttons />} />
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

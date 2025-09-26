@@ -6,11 +6,11 @@ function Counter() {
 
     function getState() {
         if (value === 0) {
-            return 'Bằng không'
+            return 'Zero'
         } else if (value > 0) {
-            return 'Dương'
+            return 'Positive'
         } else if (value < 0) {
-            return 'Âm'
+            return 'Negative'
         }
     }
 

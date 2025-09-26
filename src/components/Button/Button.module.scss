@@ -46,16 +46,16 @@
 
 .disabled {
     opacity: 0.5;
-    pointer-events: none;
+    cursor: default;
 
     &:hover {
-        opacity: 0.3;
+        opacity: 0.5 !important;
     }
 }
 
 .loading {
-    pointer-events: none;
     display: flex;
+    cursor: default;
     justify-content: center;
     align-items: center;
     padding: 6px 28px;
